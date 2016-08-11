@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Fav Reads</title>
+</head>
+
+
+<body onLoad="load()">
+   
+  <p>PASTE URL: <input type="text" id="txtName" placeholder="public feed url"/></p>
+  <p><input type="checkbox" id="myCheck"/>Uncheck if u don't need to add this URL to bookmarks.</p>
+  <input type="submit" value="get feed" id="myBtn" onclick="myfn()">
+  <input type="button" onclick="clearField()" value="Clear">
+  <input type="button" onclick="window.localStorage.clear()" value="Clear Local Storage">
+   
+
+
+	<div id="feeds">
+	<!-- feeds come here-->
+    </div>
+	
+	<div id="bookmarks">
+	<!-- bookmarks come here-->
+    </div>
+
+
+   
+  <script src="http://code.jquery.com/jquery.js"></script>
+  <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+  <script type="text/javascript" src="js/feedreader.js"></script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Fav Reads</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet" >
+	<link href="css/bootstrap-responsive.css" rel="stylesheet" >
+	<link href="css/main.css" rel="stylesheet" >
+</head>
+
+
+<body onLoad="load()">
+   
+  <div class="navbar navbar-fixed-top navbar-inverse">
+      <div class="navbar-inner">
+	       <div class="container">
+		      <a href="#" class="brand">myFeedReader</a>
+           </div>
+      </div>
+   </div>
+   
+   <div class="hero-unit">
+		<a class="btn btn-danger btn-small" type="button" onclick="window.localStorage.clear()" id="reset"><i class="icon-warning-sign icon-white"></i> Reset Storage</a>
+		<div class="form-inline">
+			<p>PASTE URL: <input type="text" class="input-small" id="txtName" placeholder="public feed url">
+			<a type="button" onclick="clearField()" class="btn"><i class="icon-arrow-left"></i> Clear Text</a>
+		</div>
+		<label class="checkbox">
+			<input type="checkbox" id="myCheck"> Uncheck if you don't need to add this URL to bookmarks.
+		</label>
+		<br>
+		<a class="btn btn-info btn-large" type="button" id="myBtn" onclick="myfn()">GET FEED <i class="icon-arrow-down icon-white"></i></a>
+	  
+   </div>
+   
+   <div class="container">
+   <h1>Your feeds here:</h1>
+	<div class="row-fluid">
+			<div class="span9">
+				<div id="feeds">
+					<!-- feeds come here-->
+				</div>
+			</div>
+      <div class="span3">
+          <ul class="nav nav-list well">
+		      <li class="nav-header"><h4>YOUR BOOKMARKS</h4><p>click on a link to get feed</p></li>
+			  <li class="divider"></li>
+				<div id="bookmarks" class="row-fluid">
+					 <!-- bookmarks come here-->
+				</div>
+      </div>
+   </div>
+			<ul class="nav nav-list">
+			<li class="divider"></li>
+			</ul>
+		<div class="container">
+      <footer>
+	    <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>App developed by: <b>Abdullah</b>, (Batch of 2011-15), Department of Computer Science and Engineering; <a href="http://fgiet.ac.in/" target="_blank">F.G.I.E.T, Raebareli</a></p>
+      </footer>
+
+    </div><!-- /.container -->
+		
+   </div>
+   
+   <br><br>
+   
+  <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript" src="js/feedreader.js"></script>
+</body>
+</html>

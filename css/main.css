@@ -1,0 +1,40 @@
+/* main.css */
+.wrapper{
+width:80%;
+margin: 0 auto;
+}
+.content, .sidebar{
+border:1px solid gray;
+border-radius: 10px;
+padding: 10px;
+}
+
+#bookmarks div a{
+	color: #0088cc;
+    cursor: pointer;
+	overflow: hidden;
+}
+
+#bookmarks div a:hover,#bookmarks div a:focus {
+color: #005580;
+text-decoration: underline;
+}
+
+#bookmarks div{
+	overflow: hidden;
+}
+
+.icon-remove{
+	margin-left:4px;
+	float: right;
+}
+
+.icon-remove:hover {
+	cursor: pointer;
+}
+
+#reset{
+	float: right;
+	clear:both;
+}
+
